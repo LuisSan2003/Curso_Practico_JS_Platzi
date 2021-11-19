@@ -115,3 +115,34 @@ function calcularAreaCirculo() {
     const area = areaCirculo(value);
     alert("El área del círculo es: " + area);
 }
+
+                // RETO CLASE 9
+
+function alerta() {
+    alert("Debe ser un triángulo isósceles: Todos los lados deben ser iguales.");
+}
+
+function alturaTriangulo(lado1, lado2, base) {
+    // El triangulo debe ser isosceles
+    const verificacion = lado1 + lado2 + base;
+
+    if ((3 * lado1) == verificacion) {
+        const hipot = lado1;
+        const catetoX = base / 2;
+        return (Math.sqrt((hipot * hipot) - (catetoX * catetoX)));
+    } else {
+        alerta();
+    }
+}
+
+function calcularAlturaTriangulo() {
+    const lado1 = document.getElementById("retoLado1");
+    const lado2 = document.getElementById("retoLado2");
+    const base = document.getElementById("retoBase");
+    const valueLado1 = Number(lado1.value);
+    const valueLado2 = Number(lado2.value);
+    const valueBase = Number(base.value);
+
+    var result = alturaTriangulo(valueLado1, valueLado2, valueBase);
+        alert("La altura del triángulo es: " + result);
+};

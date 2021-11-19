@@ -26,6 +26,10 @@ body {
     margin: 0px;
     padding: 5px;
 }
+.section h3 {
+    font-size: 16px;
+    text-decoration: underline;
+}
 .section_form {
     display: flex;
     flex-direction: column;

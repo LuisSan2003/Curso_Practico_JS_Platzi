@@ -105,3 +105,8 @@ dist
 
 # Configuracion de Visual Studio Code
 .vscode
+
+# Imagenes
+*.png
+*.jpeg
+*.jpg
