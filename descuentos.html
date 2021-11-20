@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="descuentos.css">
     <title>Porcentajes y descuentos | Curso Práctico de JavaScript de Platzi</title>
 </head>
 <body>
     <header>
         <h1>Porcentajes y descuentos</h1>
         <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
     </header>
 
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form>
-            <label for="inputPrice">Escribe el precio de tu producto</label>
-            <input id="inputPrice" type="number">
+    <div>
+        <section>
+            <form>
+                <div class="form_item">
+                    <label for="inputPrice">Escribe el precio de tu producto</label>
+                    <input id="inputPrice" type="number">
+                </div>
 
-            <label for="inputDiscount">Escribe el descuento de tu producto</label>
-            <input id="inputDiscount" type="number">
-            <button type="button" onclick="priceDiscount()">Calcular el precio con descuento</button>
+                <div class="form_item">
+                    <label for="cupon">Escribe el código de cupón</label>
+                    <input id="cupon" type="text">
+                </div>
+                <p id="cuponVerf"></p>
 
-            <p id="resultPrice"></p>
+                <div class="form_item">
+                    <label for="inputDiscount">Escribe el porcentaje de descuento (sin %)</label>
+                    <input id="inputDiscount" type="number">
+                </div>
+                
+                <button type="button" onclick="grabarCupon()">Usar cupón de descuento</button>
+                <button type="button" onclick="priceDiscount()">Calcular el precio con descuento</button>
 
-        </form>
-    </section>
+                <p id="resultPrice"></p>
+
+            </form>
+        </section>
+    </div>
     <script src="./descuentos.js"></script>
 </body>
 </html>

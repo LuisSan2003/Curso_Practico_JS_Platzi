@@ -20,3 +20,23 @@ function priceDiscount() {
 
     resultP.innerText = "El precio con descuento es: $" + precioConDescuento;
 }
+
+
+                    // RETO CLASE 13
+
+
+const cupones = [];
+
+function grabarCupon() {
+    const valor = document.getElementById("cupon");
+    const valueValor = valor.value;
+    const p = document.getElementById("cuponVerf")
+    let incluyeValor = cupones.filter(element => element == valueValor);
+
+    if (valueValor == incluyeValor) {
+        p.innerText = "ERROR ---- ¡Este cupón ya ha sido usado!";
+    } else {
+        cupones.push(valueValor);
+        p.innerText = "El cupón de descuento se ha grabado con éxito.";
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+}
+header {
+    width: 100%;
+    text-align: center;
+}
+header h2 {
+    margin: 68px 0px 34px 12px;
+    text-align: left;
+}
+
+form {
+    margin: 20px;
+    padding: 12px;
+    box-shadow: 0px 0px 12px black;
+    text-align: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 4px 8px 4px;
+    width: 150px;
+}
+form input {
+    margin-bottom: 4px;
+    padding: 2px;
+    height: 16px;
+}
+form button {
+    margin-bottom: 0px;
+}
+#cuponVerf {
+    font-weight: bold;
+    opacity: 0.7;
+    margin: 4px;
+    width: auto;
+    box-shadow: 0px 0px 12px black;
+}
