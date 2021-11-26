@@ -1,7 +1,7 @@
-const pHTML1 = document.getElementById("parrafoResult1");
-const pHTML2 = document.getElementById("parrafoResult2");
-const lista1 = [];
-const lista1Count = {};
+var pHTML1 = document.getElementById("parrafoResult1");
+var pHTML2 = document.getElementById("parrafoResult2");
+var lista1 = [];
+var lista1Count = {};
 
 function agregarItem() {
     const datos = document.getElementById("valorBox");
@@ -31,3 +31,9 @@ function calcularModa() {
     pHTML2.innerText = "La moda es (valor, # repeticiones): " + moda;
 }
 
+function limpiar() {
+    lista1 = [];
+    lista1Count = {};
+    pHTML1.innerText = "";
+    pHTML2.innerText = "";
+}
